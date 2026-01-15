@@ -18,7 +18,7 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
     <div className="container mx-auto px-4 py-16 md:px-6">
        {/* Header */}
       <div className="mb-16">
-        <Link href="/brands" className="mb-4 inline-flex items-center text-sm text-muted-foreground hover:text-foreground">
+        <Link href="/brands" className="mb-6 inline-flex items-center px-4 py-2 rounded-lg bg-white border border-border shadow-sm text-base font-medium text-muted-foreground transition-all hover:text-foreground hover:border-primary/30 hover:shadow-md">
              &larr; Back to Brands
         </Link>
         <div className="flex flex-col md:flex-row gap-8 items-start md:items-center">
