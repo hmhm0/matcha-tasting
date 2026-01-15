@@ -13,7 +13,7 @@ export default function Home() {
             Discover Your <span className="text-primary">Perfect Matcha</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            Explore taste profiles from the world's most renowned Japanese tea houses.
+            Explore taste profiles from the world&apos;s most renowned Japanese tea houses.
             Select a brand to view their ceremonial collection.
           </p>
           <div className="flex justify-center gap-4">
