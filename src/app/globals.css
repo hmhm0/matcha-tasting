@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  /* Matcha-inspired Light Mode */
+  --background: 60 20% 98%; /* Creamy off-white */
+  --foreground: 150 5% 10%; /* Dark earthy grey-green */
+
+  --card: 0 0% 100%;
+  --card-foreground: 150 5% 10%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 150 5% 10%;
+
+  --primary: 142 40% 40%; /* Matcha Green */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 60 10% 94%; /* Light beige */
+  --secondary-foreground: 150 5% 15%;
+
+  --muted: 60 5% 90%;
+  --muted-foreground: 150 2% 40%;
+
+  --accent: 142 30% 90%; /* Very light matcha tint */
+  --accent-foreground: 142 40% 30%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 60 5% 90%;
+  --input: 60 5% 90%;
+  --ring: 142 40% 40%;
+
+  --radius: 0.75rem;
+
+  --chart-1: 142 40% 40%; /* Matcha */
+  --chart-2: 85 40% 50%;  /* Light Green/Leaf */
+  --chart-3: 40 40% 60%;  /* Roasted/Hojicha */
+  --chart-4: 180 30% 50%; /* Teal/Ceramic */
+  --chart-5: 25 30% 50%;  /* Earth/Pottery */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Modern Dark Mode with Green undertones */
+    --background: 150 5% 8%; /* Very dark green-grey */
+    --foreground: 60 10% 96%;
+
+    --card: 150 5% 10%;
+    --card-foreground: 60 10% 96%;
+
+    --popover: 150 5% 10%;
+    --popover-foreground: 60 10% 96%;
+
+    --primary: 142 40% 50%; /* Brighter matcha for dark mode */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 5% 15%;
+    --secondary-foreground: 60 10% 96%;
+
+    --muted: 150 5% 15%;
+    --muted-foreground: 150 5% 60%;
+
+    --accent: 142 30% 20%; /* Dark green accent */
+    --accent-foreground: 60 10% 96%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 150 5% 15%;
+    --input: 150 5% 15%;
+    --ring: 142 40% 50%;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
